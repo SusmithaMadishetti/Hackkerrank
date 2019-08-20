@@ -1,0 +1,16 @@
+package main
+import "fmt"
+import "bufio"
+import "os"
+var a string
+func main() {
+    scanner:=bufio.NewScanner(os.Stdin)
+    for scanner.Scan(){
+    a=scanner.Text()
+    }
+    
+    fmt.Println("Hello, World.")
+    fmt.Println(a)
+ //Enter your code here. Read input from STDIN. Print output to STDOUT
+}
+
